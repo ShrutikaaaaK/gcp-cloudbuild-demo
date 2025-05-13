@@ -26,17 +26,17 @@ images:
 serviceAccount: projects/parabolic-might-451614-e9/serviceAccounts/cloudbuild-custom-sa@parabolic-might-451614-e9.iam.gserviceaccount.com
 
 # ✅ Logs bucket (must exist and be accessible by the service account)
-logsBucket: gs://my-cloudbuild-logs-bucket
+#logsBucket: gs://my-cloudbuild-logs-bucket
 
 # ✅ Safe default behavior to avoid regional issues
-options:
-  defaultLogsBucketBehavior: REGIONAL_USER_OWNED_BUCKET
+#options:
+#  defaultLogsBucketBehavior: REGIONAL_USER_OWNED_BUCKET
 
 # ✅ Optional, but good to specify logging behavior too
-logging: CLOUD_LOGGING_ONLY
+#logging: CLOUD_LOGGING_ONLY
 
 # ✅ Optional: timeout for long builds (default is 10m)
-timeout: 1200s  # 20 minutes
+#timeout: 1200s  # 20 minutes
 
 # ✅ Optional: substitutions for better reusability (example)
 substitutions:
